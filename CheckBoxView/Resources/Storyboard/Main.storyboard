@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BEP-xb-xgv">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Check Box View Controller-->
+        <scene sceneID="8p3-SJ-ifW">
+            <objects>
+                <viewController storyboardIdentifier="CheckBoxViewController" id="BEP-xb-xgv" customClass="CheckBoxViewController" customModule="M2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4KO-yY-sTI"/>
+                        <viewControllerLayoutGuide type="bottom" id="NN5-cx-hZx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3hy-GS-O4r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INL-sm-cS0">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7d-cJ-Z3h">
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEi-um-XCQ">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="Hw9-hc-Dvo"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cancelButtonAction:" destination="BEP-xb-xgv" eventType="touchUpInside" id="LZ3-yo-tyN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubf-QM-RFR">
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="55" id="DUZ-UL-EpJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="doneButtonAction:" destination="BEP-xb-xgv" eventType="touchUpInside" id="ADp-hZ-lEW"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0078431372550000003" green="0.1333333333" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ubf-QM-RFR" firstAttribute="top" secondItem="g7d-cJ-Z3h" secondAttribute="top" id="2eU-tQ-m9d"/>
+                                            <constraint firstItem="JEi-um-XCQ" firstAttribute="top" secondItem="g7d-cJ-Z3h" secondAttribute="top" id="Mwx-oC-n2e"/>
+                                            <constraint firstItem="JEi-um-XCQ" firstAttribute="leading" secondItem="g7d-cJ-Z3h" secondAttribute="leading" id="NS2-w9-pTV"/>
+                                            <constraint firstAttribute="bottom" secondItem="ubf-QM-RFR" secondAttribute="bottom" id="cKW-2R-zCJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="JEi-um-XCQ" secondAttribute="bottom" id="dCc-W6-III"/>
+                                            <constraint firstAttribute="height" constant="40" id="goc-mO-Qfr"/>
+                                            <constraint firstAttribute="trailing" secondItem="ubf-QM-RFR" secondAttribute="trailing" id="idg-ym-l5R"/>
+                                        </constraints>
+                                    </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sd-ep-Bzs"/>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3sd-ep-Bzs" secondAttribute="trailing" id="3kb-hR-NEf"/>
+                                    <constraint firstItem="3sd-ep-Bzs" firstAttribute="leading" secondItem="INL-sm-cS0" secondAttribute="leading" id="FLP-hx-aeT"/>
+                                    <constraint firstItem="g7d-cJ-Z3h" firstAttribute="top" secondItem="INL-sm-cS0" secondAttribute="top" id="K8S-nb-cd8"/>
+                                    <constraint firstAttribute="trailing" secondItem="g7d-cJ-Z3h" secondAttribute="trailing" id="Uw1-53-JVH"/>
+                                    <constraint firstItem="3sd-ep-Bzs" firstAttribute="top" secondItem="g7d-cJ-Z3h" secondAttribute="bottom" id="eJV-kv-HDE"/>
+                                    <constraint firstAttribute="bottom" secondItem="3sd-ep-Bzs" secondAttribute="bottom" id="f2b-GX-qEg"/>
+                                    <constraint firstItem="g7d-cJ-Z3h" firstAttribute="leading" secondItem="INL-sm-cS0" secondAttribute="leading" id="idP-GN-0wQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="INL-sm-cS0" firstAttribute="centerX" secondItem="3hy-GS-O4r" secondAttribute="centerX" id="4oh-7k-cmz"/>
+                            <constraint firstItem="INL-sm-cS0" firstAttribute="leading" secondItem="3hy-GS-O4r" secondAttribute="leading" constant="30" id="DTY-x3-X60"/>
+                            <constraint firstItem="NN5-cx-hZx" firstAttribute="top" secondItem="INL-sm-cS0" secondAttribute="bottom" constant="110" id="EUH-uJ-DW7"/>
+                            <constraint firstAttribute="trailing" secondItem="INL-sm-cS0" secondAttribute="trailing" constant="30" id="MSD-Dn-GAQ"/>
+                            <constraint firstItem="INL-sm-cS0" firstAttribute="top" secondItem="4KO-yY-sTI" secondAttribute="bottom" constant="110" id="sq0-NM-gUi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="JEi-um-XCQ" id="PbS-by-ss8"/>
+                        <outlet property="btnDone" destination="ubf-QM-RFR" id="uns-mB-rFI"/>
+                        <outlet property="btnView" destination="g7d-cJ-Z3h" id="PU6-mL-4FY"/>
+                        <outlet property="scrollView" destination="3sd-ep-Bzs" id="JFj-Xb-trl"/>
+                        <outlet property="topView" destination="INL-sm-cS0" id="0f5-lF-jUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNS-GZ-lAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="-343"/>
+        </scene>
+    </scenes>
+</document>
