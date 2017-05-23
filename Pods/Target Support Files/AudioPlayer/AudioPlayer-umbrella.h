@@ -10,7 +10,10 @@
 #endif
 #endif
 
+#import "AudioPlayer.h"
+#import "AudioPlayerUtilities.h"
+#import "AudioSound.h"
 
-FOUNDATION_EXPORT double AlamofireVersionNumber;
-FOUNDATION_EXPORT const unsigned char AlamofireVersionString[];
+FOUNDATION_EXPORT double AudioPlayerVersionNumber;
+FOUNDATION_EXPORT const unsigned char AudioPlayerVersionString[];
 

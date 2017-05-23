@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "CheckBoxSpecs"
-  s.version      = "0.1.0"
+  s.version      = "2.1.0"
   s.summary      = "Use showNotificationWithMessage method"
 
   # This description is used to generate tags and improve search results.
@@ -141,7 +141,7 @@ s.exclude_files = "Classes/Exclude"
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
 
-s.dependency "Alamofire", "~> 1.0"
+s.dependency "AudioPlayer"
 # s.dependency "Alamofire", "~> 1.4"
 
 end

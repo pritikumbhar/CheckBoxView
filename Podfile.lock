@@ -1,12 +1,12 @@
 PODS:
-  - Alamofire (4.4.0)
+  - AudioPlayer (0.0.3)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.4)
+  - AudioPlayer
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AudioPlayer: 80778e8171770ec1beddcba2d7bf1ce2613d9c30
 
-PODFILE CHECKSUM: 94618384398a0578fe247aa35029b919a11f6272
+PODFILE CHECKSUM: 49ac4b878845de61093a8d3bae4cc8dfbbc60238
 
 COCOAPODS: 1.2.1
