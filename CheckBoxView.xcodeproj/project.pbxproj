@@ -16,6 +16,7 @@
 		0A45916F1EB9440C0037CEC1 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4591671EB9440C0037CEC1 /* CheckBoxView.swift */; };
 		0A4591701EB9440C0037CEC1 /* CustomCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4591681EB9440C0037CEC1 /* CustomCheckBox.swift */; };
 		0A4591711EB9440C0037CEC1 /* CustomCheckBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A4591691EB9440C0037CEC1 /* CustomCheckBox.xib */; };
+		4E0493DF0C1B6156F2F01112 /* Pods_CheckBoxView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA47859BDEABAD1D4EDE54C /* Pods_CheckBoxView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		0A4591671EB9440C0037CEC1 /* CheckBoxView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 		0A4591681EB9440C0037CEC1 /* CustomCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCheckBox.swift; sourceTree = "<group>"; };
 		0A4591691EB9440C0037CEC1 /* CustomCheckBox.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCheckBox.xib; sourceTree = "<group>"; };
+		2C66BC514091E1ACC9D1CAC4 /* Pods-CheckBoxView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckBoxView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CheckBoxView/Pods-CheckBoxView.debug.xcconfig"; sourceTree = "<group>"; };
+		8EA47859BDEABAD1D4EDE54C /* Pods_CheckBoxView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckBoxView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE4F114119835F22E17CC017 /* Pods-CheckBoxView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckBoxView.release.xcconfig"; path = "Pods/Target Support Files/Pods-CheckBoxView/Pods-CheckBoxView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0493DF0C1B6156F2F01112 /* Pods_CheckBoxView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				0A4591411EB93D5C0037CEC1 /* CheckBoxView */,
 				0A4591401EB93D5B0037CEC1 /* Products */,
+				A183C6340AE463229E338F0F /* Pods */,
+				77368D158AFB2803487E909B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +139,23 @@
 			path = CustomCheckBox;
 			sourceTree = "<group>";
 		};
+		77368D158AFB2803487E909B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EA47859BDEABAD1D4EDE54C /* Pods_CheckBoxView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A183C6340AE463229E338F0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C66BC514091E1ACC9D1CAC4 /* Pods-CheckBoxView.debug.xcconfig */,
+				EE4F114119835F22E17CC017 /* Pods-CheckBoxView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A4591511EB93D5D0037CEC1 /* Build configuration list for PBXNativeTarget "CheckBoxView" */;
 			buildPhases = (
+				0104C61ABD888CA449E11280 /* [CP] Check Pods Manifest.lock */,
 				0A45913B1EB93D5B0037CEC1 /* Sources */,
 				0A45913C1EB93D5B0037CEC1 /* Frameworks */,
 				0A45913D1EB93D5B0037CEC1 /* Resources */,
+				5BAFF657BBC7EFDA60490CEE /* [CP] Embed Pods Frameworks */,
+				98BC36349A116C929A2087D4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0104C61ABD888CA449E11280 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5BAFF657BBC7EFDA60490CEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckBoxView/Pods-CheckBoxView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98BC36349A116C929A2087D4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CheckBoxView/Pods-CheckBoxView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A45913B1EB93D5B0037CEC1 /* Sources */ = {
@@ -311,6 +386,7 @@
 		};
 		0A4591521EB93D5D0037CEC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C66BC514091E1ACC9D1CAC4 /* Pods-CheckBoxView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckBoxView/Info.plist;
@@ -323,6 +399,7 @@
 		};
 		0A4591531EB93D5D0037CEC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4F114119835F22E17CC017 /* Pods-CheckBoxView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CheckBoxView/Info.plist;
